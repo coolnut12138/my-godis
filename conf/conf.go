@@ -1,5 +1,5 @@
 package conf
 
-func SetupConfig() {
+func SetupConfig(fileName string) {
 
 }

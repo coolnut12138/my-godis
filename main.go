@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/coolnut12138/my-godis/conf"
 	"os"
 )
 
@@ -35,6 +36,8 @@ func main() {
 	if configName == "" {
 		if exist, err := fileExists("redis.conf"); exist && err == nil {
 			conf.SetupConfig("redis.conf")
+		} else {
+
 		}
 	}
 	// init server
